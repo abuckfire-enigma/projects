@@ -124,31 +124,3 @@ def computer_move(board, computer):
 
     # otherwise, pick random spot
     return random.choice(utilities.empty_squares(board))
-
-def main():
-    tic_tac_toe_enabled = True
-    while tic_tac_toe_enabled:
-        human = utilities.get_human_marker()
-        computer = utilities.assign_marker_to_computer(human)
-        is_human_turn = utilities.does_human_start_game(human)
-        print "Let's begin.\nHere is the board: "
-        board = utilities.create_board()
-        utilities.pretty_print_board(board)
-
-        in_game = True
-        while in_game:
-            if is_human_turn:
-                board[utilities.get_human_move(board)] = human
-            if not is_human_turn:
-                print "Computer is moving..."
-                board[computer_move(board, computer)] = computer
-
-            utilities.pretty_print_board(board)
-            is_human_turn = not is_human_turn
-
-            if game_over(board, computer):
-                in_game = False
-                tic_tac_toe_enabled = utilities.play_again()
-
-if __name__ == "__main__":
-    main()

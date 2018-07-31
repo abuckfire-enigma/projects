@@ -25,3 +25,6 @@ Above, each player has moved twice. First, 'o' moved to the topc enter, 'x' chos
 ### Notes
 * Board is represented as a list
 * deepcopy is used to try out different moves
+
+### To play
+`python play_game.py`
