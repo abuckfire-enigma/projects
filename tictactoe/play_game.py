@@ -71,8 +71,7 @@ def game_over(board, computer):
         return True
     return False
 
-
-def main():
+def play_game():
     tic_tac_toe_enabled = True
     while tic_tac_toe_enabled:
         human = get_human_marker()
@@ -98,4 +97,4 @@ def main():
                 tic_tac_toe_enabled = play_again()
 
 if __name__ == "__main__":
-    main()
+    play_game()
