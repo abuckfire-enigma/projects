@@ -14,5 +14,5 @@ One week long projects
 ## In Progress
 - unbeatable tic tac toe (in review)
 - patent data project (exploratory analysis)
-- algorithms text book (chp 8/11)
+- algorithms text book (chp 9/11)
 - advent of code (day 4)
