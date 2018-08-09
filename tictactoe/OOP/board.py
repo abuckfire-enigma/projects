@@ -24,7 +24,7 @@ class Board(object):
     def is_empty(self, square):
         return True if self.board[square] else False
 
-    def is_board_full(self):
+    def board_full(self):
         """
         If the board is full, returns True, otherwise False
         """
@@ -57,4 +57,16 @@ class Board(object):
 
     def update_board(self, move, marker):
         self.board[move] = marker
-        return self.board
+
+    def is_win(self):
+        """
+        Checks to see if a move is a winning move
+        Args:
+            board (list): the tic tac toe board
+            marker (str): "x" or "o"
+        Returns:
+            bool: True if winning move, False otherwise
+        """
+        for (i, j, k) in WINNING_POSITIONS:
+            if self.board[i] != "" and self.board[i] == self.board[j] == self.board[k]:
+                return self.board[i]

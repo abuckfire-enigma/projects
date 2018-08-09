@@ -24,7 +24,8 @@ class Player(object):
             return self.ask_for_move(board)
         return self.computer_move(board)
 
-    def ask_for_move(self, board):
+    @staticmethod
+    def ask_for_move(board):
         """
         Prompt human for next move until the move is
             - in the correct format
