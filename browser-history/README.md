@@ -14,11 +14,12 @@ This is a tool that will analyze your browser history up since the last time you
             * visited a specific page
 
 ## TODO
-    * Download data by weekly use and store in seperate files
-    * Add analysis of peak use hours and days
-    * Add analysis of if certain sites are more likely to be visited at a certain time of day or day of week
-    * Chart of 5 most popular sites visited per day
-    * Flexible SQL query format (to access other database tables)
+    * By 7/10
+        * Download data by weekly use and store in seperate files
+        * Add analysis of peak use hours and days
+        * Add analysis of if certain sites are more likely to be visited at a certain time of day or day of week
+        * Chart of 5 most popular sites visited per day
+        * Flexible SQL query format (to access other database tables)
 
     * Next Steps
         * Send emailed report
