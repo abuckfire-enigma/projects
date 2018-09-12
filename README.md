@@ -12,7 +12,7 @@ One week long projects
 8. rasberry pi + temp sensor + cli or web app  temperature logger  track temperature in home and have it sent to database or csv file to track temp
 
 ## In Progress
-- unbeatable tic tac toe (in review)
+- unbeatable tic tac toe DONE
 - patent data project (exploratory analysis)
-- algorithms text book (chp 9/11)
+- algorithms text book DONE
 - advent of code (day 4)
