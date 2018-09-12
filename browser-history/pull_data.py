@@ -16,9 +16,6 @@ DATABASES_OF_INTEREST = {"urls": ["last_visit_time", "url", "title", "visit_coun
 
 DB_CHROME_LOCATION = "~/Library/Application\\ Support/Google/Chrome/Default/History"
 
-def _parse(row, headers):
-    return dict(itertools.izip(headers, row))
-
 
 def _parse_args():
     parser = argparse.ArgumentParser("Analyze chrome history")
