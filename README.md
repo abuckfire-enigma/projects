@@ -11,8 +11,9 @@ One week long projects
 7. A bill splitter (suggested implementation: mobile app): Build a simple tool to help you and your friends split bills when you go out to eat together.
 8. rasberry pi + temp sensor + cli or web app  temperature logger  track temperature in home and have it sent to database or csv file to track temp
 
-## In Progress
+## In this Repo
 - unbeatable tic tac toe DONE
 - patent data project (exploratory analysis)
 - algorithms text book DONE
-- advent of code (day 5)
+- advent of code (day 6)
+- slack inviter DONE

@@ -35,7 +35,7 @@ def total_valid_anagram_phrases(phrases):
 
 
 def main():
-    phrases = utils.read_input_text(os.path.join("fixtures", "input_4.txt"))
+    phrases = utils.read_input_text(os.path.join("fixtures", "input_4.txt"), "txt")
     utils.pretty_print(4, total_valid_unique_phrases(phrases), 
                           total_valid_anagram_phrases(phrases))
 

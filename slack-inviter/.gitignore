@@ -1,0 +1,5 @@
+# api key file
+*.txt
+
+# pyc files
+*.pyc
