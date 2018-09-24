@@ -34,10 +34,7 @@ def total_valid_anagram_phrases(phrases):
     return total
 
 
-def main():
-    phrases = utils.read_input_text(os.path.join("fixtures", "input_4.txt"), "txt")
-    utils.pretty_print(4, total_valid_unique_phrases(phrases), 
-                          total_valid_anagram_phrases(phrases))
+def run(day):
+    phrases = utils.parse_file_contents(day, reader_type = "text_list")
+    return total_valid_unique_phrases(phrases), total_valid_anagram_phrases(phrases)
 
-if __name__ == "__main__":
-    main()

@@ -24,9 +24,7 @@ def find_sum_larger_than_input(index):
         m[x, y] = s = sum(m.get((x + j % 3 - 1, y + j//3), 0) for j in range(-3, 6))
     return s
 
-def main():
-    squares = int(utils.read_input(os.path.join("fixtures", "input_3.txt")))
-    utils.pretty_print(3, sum_iterable(pos(squares)), find_sum_larger_than_input(squares))
 
-if __name__ == "__main__":
-    main()
+def run(day):
+    squares = int(utils.parse_file_contents(day))
+    return sum_iterable(pos(squares)), find_sum_larger_than_input(squares)

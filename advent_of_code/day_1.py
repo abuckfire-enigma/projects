@@ -25,9 +25,6 @@ def sum_if_match_halfway_digit(number):
     return sum([int(number[i]) for i in range(midway_point) if number[i] == number[i + midway_point]]) * 2
 
 
-def main():
-    number = utils.read_input(os.path.join("fixtures", "input_1.txt"))
-    utils.pretty_print(1, sum_if_match_next_digit(number), sum_if_match_halfway_digit(number))
-
-if __name__ == "__main__":
-    main()
+def run(day):
+    number = utils.parse_file_contents(day)
+    return sum_if_match_next_digit(number), sum_if_match_halfway_digit(number)

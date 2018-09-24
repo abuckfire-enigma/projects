@@ -1,23 +1,23 @@
-def pretty_print(day, day_p1, day_p2):
-    print "The answer to day {}, part 1 is: {}".format(day, day_p1)
-    print "The answer to day {}, part 2 is: {}".format(day, day_p2)
+import os
 
-def read_input(in_file):
-    with open(in_file, "r") as reader:
-        return reader.read().strip()
+def pretty_print(day, part, ans):
+    print "The answer to day {}, part {} is: {}".format(day, part, ans)
 
-def read_list_input(in_file):
-    with open(in_file, "r") as reader:
-        return [map(int, line.split())[0] for line in reader]
 
-def read_matrix_input(in_file):
-    with open(in_file, "r") as reader:
-        return [map(int, line.split()) for line in reader]
+def get_input_path(day):
+    return os.path.join("fixtures", "input_" + day + ".txt")
 
-def read_input_text(in_file, contents):
-    with open(in_file, "r") as reader:
-        if contents == "txt":
+
+def parse_file_contents(day, reader_type="txt", index=False):
+    path = get_input_path(day)
+    with open(path, "r") as reader:
+        if reader_type == "txt":
+            return reader.read().strip()
+
+        if reader_type == "list":
+            if index:
+                return [map(int, line.split()) for line in reader]
+            return [map(int, line.split())[0] for line in reader]
+
+        if reader_type == "text_list":
             return [line.split() for line in reader]
-        if contents == "numeric":
-            return [map(int, line.split()) for line in reader]
-

@@ -40,9 +40,6 @@ def compute_sum_even_divide(matrix):
     return sum([compute_rem_0(row) for row in matrix])
 
 
-def main():
-    matrix = utils.read_matrix_input(os.path.join("fixtures", "input_2.txt"))
-    utils.pretty_print(2, compute_checksum(matrix), compute_sum_even_divide(matrix))
-
-if __name__ == "__main__":
-    main()
+def run(day):
+    matrix = utils.parse_file_contents(day, reader_type="list", index=True)
+    return compute_checksum(matrix), compute_sum_even_divide(matrix)
