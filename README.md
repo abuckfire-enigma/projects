@@ -13,7 +13,7 @@ One week long projects
 
 ## In this Repo
 - unbeatable tic tac toe DONE
-- patent data project (exploratory analysis)
+- browser analyzer app (exploratory analysis DONE)
 - algorithms text book DONE
-- advent of code (day 6)
+- advent of code (day 7)
 - slack inviter DONE
